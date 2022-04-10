@@ -1,6 +1,6 @@
 import re
 
-def text_patterns(text, patterns):
+def test_patterns(text, patterns):
     """Получив исходный текст и список шаблонов в качестве
     аргументов, выполняет поиск всех вхождений каждого шаблона
     в тексте и направляет результаты в стандартный поток вывода
@@ -21,4 +21,4 @@ def text_patterns(text, patterns):
     return 
 
 if __name__ == "__main__":
-    text_patterns('abbaaabbbbaaaaa', [('ab', "'a' followed by 'b'"),])
+    test_patterns('abbaaabbbbaaaaa', [('ab', "'a' followed by 'b'"),])
