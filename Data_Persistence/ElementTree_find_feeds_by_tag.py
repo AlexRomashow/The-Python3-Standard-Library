@@ -1,0 +1,9 @@
+from xml.etree import ElementTree
+
+with open('podcast.opml', 'rt') as f:
+    tree = ElementTree.parse(f)
+
+for node in tree.findall('.//outline'):
+    url = node.attrib.get('xmlUrl')
+    if url:
+        print(url)
